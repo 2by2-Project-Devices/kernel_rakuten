@@ -719,7 +719,7 @@ static void stop_tests(struct loopback_test *t)
 	}
 }
 
-static void handler(int sig) { /* do nothing */  }
+static void handler(int __attribute__((unused)) sig) { /* do nothing */ }
 
 static int wait_for_complete(struct loopback_test *t)
 {
